@@ -37,7 +37,7 @@ Using Kahn's algorithm, we generate a topologically sorted order of nodes with a
 - **accumulate_results(results, input_size, tile_size, overlap, kernel_size, padding, stride)**: Accumulates results from cores to form the final output.
 
 ### Example Usage
-
+Run the main.py file or
 ```python
 parameters = initialize_parameters(grid_size=(8, 10), input_size=(224, 224, 32),
                                    kernel_size=3, stride=1, padding=1, channels=32,
