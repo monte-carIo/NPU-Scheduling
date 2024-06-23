@@ -27,15 +27,6 @@ Using Kahn's algorithm, we generate a topologically sorted order of nodes with a
 
 ## Implementation
 
-### Key Functions
-
-- **create_computation_graph()**: Constructs the computation graph.
-- **topological_sort_with_levels(graph)**: Performs topological sorting on the computation graph.
-- **divide_into_tiles(input_data, tile_size, overlap)**: Divides input data into tiles for processing.
-- **assign_tiles_to_cores(tiles, grid_size)**: Assigns tiles to NPU cores.
-- **execute_on_cores(core_assignments, kernel, parameters)**: Executes computations on the assigned cores.
-- **accumulate_results(results, input_size, tile_size, overlap, kernel_size, padding, stride)**: Accumulates results from cores to form the final output.
-
 ### Example Usage
 -  For simulation code:
 Run the main.py file or
