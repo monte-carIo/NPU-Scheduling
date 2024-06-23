@@ -37,6 +37,7 @@ Using Kahn's algorithm, we generate a topologically sorted order of nodes with a
 - **accumulate_results(results, input_size, tile_size, overlap, kernel_size, padding, stride)**: Accumulates results from cores to form the final output.
 
 ### Example Usage
+-  For simulation code:
 Run the main.py file or
 ```python
 parameters = initialize_parameters(grid_size=(8, 10), input_size=(224, 224, 32),
@@ -54,6 +55,20 @@ output = distribute_computations(parameters, input_data, kernel)
 
 print("Output (First 10 values):")
 print(output.flatten()[:10])
+```
+- For visualize code
+```python
+# Generate the computation graph
+computation_graph = create_computation_graph()
+
+# Apply topological sort and print the result
+sorted_order = topological_sort(computation_graph)
+print("Topologically sorted order of the graph:")
+print(sorted_order)
+L, levels = topological_sort_with_levels(computation_graph)
+print("Topological Sort Order:", L)
+print(levels)
+visualize_graph(computation_graph, levels)
 ```
 
 ## Future Work
