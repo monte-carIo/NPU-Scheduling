@@ -157,16 +157,3 @@ def topological_sort_with_levels(graph):
         return "Error: The graph has at least one cycle"
     else:
         return L, levels
-
-# Generate the computation graph
-computation_graph = create_computation_graph()
-
-# Apply topological sort and print the result
-# sorted_order = topological_sort(computation_graph)
-# print("Topologically sorted order of the graph:")
-# print(sorted_order)
-# 
-L, levels = topological_sort_with_levels(computation_graph)
-# print("Topological Sort Order:", L)
-print(levels)
-visualize_graph(computation_graph, levels)
